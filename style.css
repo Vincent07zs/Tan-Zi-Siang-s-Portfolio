@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#F4EFE3;overflow:hidden}
+.hero{position:relative;isolation:isolate;height:100vh;height:100svh;overflow:hidden;background:#F4EFE3;touch-action:none;color:#1d1a12;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+#bg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.portrait{position:absolute;bottom:0;left:50%;transform:translateX(-50%);aspect-ratio:1024/1536;width:min(64vh,92vw)}
+.portrait img,.portrait canvas{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.portrait img{object-fit:fill}
+#ghost{opacity:.022;-webkit-mask-image:radial-gradient(ellipse 27% 21% at 49% 34%,#000 35%,transparent 100%);mask-image:radial-gradient(ellipse 27% 21% at 49% 34%,#000 35%,transparent 100%)}
+.mark{position:absolute;top:clamp(20px,3.4vw,44px);left:clamp(20px,3.4vw,48px);color:#f6f5f0;mix-blend-mode:difference;pointer-events:none}
+.mark h1{font-weight:900;font-size:clamp(56px,10vw,152px);line-height:.8;letter-spacing:-.01em;text-transform:uppercase;font-family:"HelveticaNeue-CondensedBlack","HelveticaNeue-CondensedBold","AvenirNextCondensed-Heavy","Arial Narrow",Impact,sans-serif}
+.mark p{margin-top:18px;font-size:11px;font-weight:600;line-height:1.4;letter-spacing:.18em;text-transform:uppercase}
+.cta{position:absolute;top:clamp(20px,3.4vw,44px);right:clamp(20px,3.4vw,48px);padding:12px 24px;border-radius:999px;background:#B4E600;color:#14130E;font-size:13px;font-weight:700;letter-spacing:.02em;text-decoration:none;transition:transform .25s}
+.cta:hover{transform:scale(1.05)}
+.card{position:absolute;left:clamp(20px,3.4vw,48px);bottom:clamp(20px,3.4vw,44px);max-width:236px;padding:14px 16px;border-radius:14px;background:rgba(244,239,227,.88);border:1px solid rgba(59,51,32,.12);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.lbl{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.lbl i{width:8px;height:8px;border-radius:50%;background:#B4E600}
+.card p{margin-top:8px;font-size:13px;line-height:1.45;color:#4a4331}
+@media(max-width:768px){.portrait{width:min(58vh,118vw)}.card{max-width:200px}}
